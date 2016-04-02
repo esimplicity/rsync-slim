@@ -58,6 +58,12 @@ module.exports = function(o, cb) {
       env: process.env
     });
   }
+  else if (o.user) {
+    r = spawn('/usr/bin/sudo', ['su', o.user, '-c', command], {
+      stdio: stdio,
+      env: process.env
+    });
+  }
   else {
     r = spawn('/bin/sh', ['-c', command], {
       stdio: stdio,
