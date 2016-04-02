@@ -1,6 +1,6 @@
 {
   "name": "rsync-slim",
-  "version": "1.1.0",
+  "version": "1.1.0a",
   "description": "Slim wrapper around rsync",
   "main": "index.js",
   "repository": {
